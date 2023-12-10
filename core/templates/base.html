@@ -1,0 +1,21 @@
+{% load bootstrap5 %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>PortFol.io</title>
+
+    <link rel="icon" href="{% static 'images/favicon.png' %}"> 
+
+    
+    
+    {% bootstrap_css %}
+</head>
+<body class="text-center">
+    {% block content %}
+    {% endblock %}
+
+
+    {% bootstrap_javascript %}
+</body>
+</html>
