@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-q@yje!s0er=sf5ngau3)jbv1e4%@m1t)%wbzpubqzi2be2nytl
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['localhost']
 
 
 # Application definition
@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
+    'bootstrap5',
+    'core'
 ]
 
 MIDDLEWARE = [
@@ -48,10 +51,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     
-    'bootstrap5',
-    'core'
-
-
+    
 ]
 
 ROOT_URLCONF = 'portfolio.urls'
