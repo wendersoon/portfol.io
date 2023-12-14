@@ -5,7 +5,12 @@ from django.contrib.auth.forms import UserCreationForm
 
 class IndexView(TemplateView):
     
-    template_name = 'base.html'
+    template_name = 'index.html'
+    
+    
+class PortfolioView(TemplateView):
+    
+    template_name = 'portfolio.html'
     
 class RegisterView(CreateView):
     
