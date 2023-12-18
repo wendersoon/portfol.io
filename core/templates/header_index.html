@@ -2,12 +2,92 @@
 
 <div class="container-fluid">
 
-    <img src="{% static 'images/banner_header.png' %}"  class="img-fluid rounded-pill" alt="...">
-    <div class="d-grid gap-2 d-md-block">
-        <button class="btn btn-primary btn-lg" type="button">Login</button>
-        <button class="btn btn-primary btn-lg" type="button">Criar Conta</button>
-        <button class="btn btn-success btn-lg" type="button">Doação</button>
-
+  <img src="{% static 'images/banner_header.png' %}"  class="img-fluid rounded-pill" alt="...">
+    
+  <div class="d-grid gap-2 d-md-block">
+   
+    <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#LoginModal">
+      Login
+    </button>
+    <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#CriarContaModal">
+      Criar Conta
+    </button>
+    <button type="button" class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#DoacaoModal">
+      Café 🌚
+    </button>
+        
+  </div>
+      
+  <!-- Modal MODAL LOGIN-->
+  <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Login</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <div class="col-auto">
+                <label for="InputEmail" class="col-form-label">Email</label>
+              </div>
+              <div class="col-auto">
+                <input type="email" id="InputEmail" class="form-control" aria-describedby="passwordHelpInline">
+              </div>
+            </div>
+            <div class="mb-3">
+              <div class="col-auto">
+                <label for="InputPassword" class="col-form-label">Senha</label>
+              </div>
+              <div class="col-auto">
+                <input type="password" id="InputPassword" class="form-control" aria-describedby="passwordHelpInline">
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Acessar</button>
+          </form>
+        </div>
+      </div>
     </div>
+  </div>
+  
+  <!-- Modal CRIAR CONTA-->
+  <div class="modal fade" id="CriarContaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Criar Conta</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal DOAÇÃO-->
+  <div class="modal fade" id="DoacaoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Doe um Cafezinho pro ADM</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>
   
